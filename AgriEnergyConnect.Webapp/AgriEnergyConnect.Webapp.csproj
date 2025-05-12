@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>75cf426a-48d0-4310-b692-0203fa3604a4</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Content Remove="wwwroot\logo.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
+      <PackageReference Include="Syncfusion.Blazor.Grid" Version="25.2.3" />
+      <PackageReference Include="Syncfusion.Blazor.Navigations" Version="25.2.3" />
+      <PackageReference Include="Syncfusion.Blazor.Themes" Version="25.2.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\AgriEnergyConnect.Application\AgriEnergyConnect.Application.csproj" />
+      <ProjectReference Include="..\AgriEnergyConnect.Infrastructure\AgriEnergyConnect.Infrastructure.csproj" />
+    </ItemGroup>
+
+</Project>
